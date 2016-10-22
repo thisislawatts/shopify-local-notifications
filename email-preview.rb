@@ -1,24 +1,25 @@
 require 'sinatra'
 require 'liquid'
+require 'json'
 
 configure do
 	set :views, File.dirname(__FILE__) + '/views'
 end
 
-get '/draft_order_invoice' do
-	liquid :draft_order_invoice, :locals => {:world => 'World!'}
+def load_data(filename)
+	file = open("data/#{filename}.json")
+	json = JSON.parse(file.read)
+
+	return json
 end
 
-get '/order_cancelled' do
-	liquid :order_cancelled, :locals => {:world => 'World!'}
-end
+defaults = {
+	:demo_store => 'https://timber-demo.myshopify.com'
+}
 
-get '/order_confirmation' do
-	liquid :order_confirmation, :locals => {:world => 'World!'}
-end
-
-get '/refund_notification' do
-	liquid :refund_notification, :locals => {:world => 'World!'}
+get '/:template' do
+	json_file = "#{params[:template]}"
+	liquid params[:template].to_sym, :locals => defaults.merge!(load_data(json_file))
 end
 
 get '/' do
