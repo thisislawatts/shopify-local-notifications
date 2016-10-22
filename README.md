@@ -1,7 +1,7 @@
 Shopify Notifications
 ===
 
-A tool to help test templates local when putting together customised notification templates.
+A tool to help test email templates locally when customising notifications.
 
 Check the [templates variables documentation](https://help.shopify.com/manual/sell-online/notifications/email-variables) for a full list of the available objects.
 
