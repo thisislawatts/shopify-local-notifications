@@ -4,6 +4,7 @@ Shopify Notifications
 A tool to help test templates local when putting together customised notification templates.
 
 Usage
+---
 
 ```bash
 ruby email-preview.rb
