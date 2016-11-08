@@ -1,6 +1,10 @@
 Shopify Notifications
 ===
 
+[![Code Climate](https://codeclimate.com/github/thisislawatts/shopify-local-notifications/badges/gpa.svg)](https://codeclimate.com/github/thisislawatts/shopify-local-notifications)
+[![Dependency Status](https://gemnasium.com/badges/github.com/thisislawatts/shopify-local-notifications.svg)](https://gemnasium.com/github.com/thisislawatts/shopify-local-notifications)
+
+
 A tool to help test email templates locally when customising notifications.
 
 Check the [templates variables documentation](https://help.shopify.com/manual/sell-online/notifications/email-variables) for a full list of the available objects.
