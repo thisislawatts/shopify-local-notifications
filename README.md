@@ -14,6 +14,16 @@ ruby email-preview.rb
 
 Then [open it up in the Browser](http://localhost:4567/) at [http://localhost:4567/]()
 
+Getting Order Information
+--- 
+
+If you've got a particular order you'd like to work with, you can get easily get this information from a Shopify store in JSON format.
+
+1. Visit the Order section and load up the order you want
+2. In the browser's address bar append `.json` to the URL. 
+3. Copy and paste the content to `data/{template_name}.json`
+
+
 Development
 ---
 
